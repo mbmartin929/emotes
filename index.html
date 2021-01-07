@@ -133,6 +133,13 @@
             style="width: 80%; cursor: pointer; display: none; height: 529px"
             onclick="onClick0(this)"
           />
+          <img
+            id="0-3"
+            class="0mySlides scale-down w3-hover-opacity"
+            src=""
+            style="width: 80%; cursor: pointer; display: none; height: 529px"
+            onclick="onClick0(this)"
+          />
 
           <div class="w3-col-padding w3-section">
             <!-- BOTTOM PORTRAIT IMAGES -->
@@ -159,6 +166,16 @@
             <div class="w3-col s2" style="transform: translate(60%, -1%)">
               <img
                 id="0-02"
+                class="0demo w3-opacity w3-hover-opacity-off contain"
+                src=""
+                style="width: 90%; cursor: pointer"
+                onclick="currentDiv0(3)"
+              />
+            </div>
+
+            <div class="w3-col s2" style="transform: translate(60%, -1%)">
+              <img
+                id="0-03"
                 class="0demo w3-opacity w3-hover-opacity-off contain"
                 src=""
                 style="width: 90%; cursor: pointer"
@@ -233,22 +250,29 @@
       var thirdDescription0_1 = "+10 to 40 USD for complexity";
       var thirdDescription0_2 = "+20 USD for background";
 
+      var fourthDescription0_1 = "+10 to 40 USD for complexity";
+      var fourthDescription0_2 = "+20 USD for background";
+
       var price0_1 = "30 USD";
       var price0_2 = "40 USD";
       var price0_3 = "50 USD";
+      var price0_3 = "50 USD";
 
-      var imgVar0_0 = "https://i.imgur.com/6TVfWLX.png";
-      var imgVar0_1 = "https://i.imgur.com/bxw7aFA.png";
-      var imgVar0_2 = "https://i.imgur.com/DZ7dpdp.png";
+      var imgVar0_0 = "https://i.imgur.com/gLW52TA.jpg";
+      var imgVar0_1 = "https://i.imgur.com/sBOrZ3G.jpg";
+      var imgVar0_2 = "https://i.imgur.com/ZT8BG6C.png";
+      var imgVar0_3 = "https://i.imgur.com/usYRAUY.png";
 
       function setImages0() {
         document.getElementById("0-0").src = imgVar0_0;
         document.getElementById("0-1").src = imgVar0_1;
         document.getElementById("0-2").src = imgVar0_2;
+        document.getElementById("0-3").src = imgVar0_3;
 
         document.getElementById("0-00").src = imgVar0_0;
         document.getElementById("0-01").src = imgVar0_1;
         document.getElementById("0-02").src = imgVar0_2;
+        document.getElementById("0-03").src = imgVar0_3;
       }
 
       function currentDiv0(n) {
@@ -292,7 +316,12 @@
           document.getElementById("img0-01").style.maxWidth = "100%";
           document.getElementById("img0-01").style.maxHeight = "75vh";
           document.getElementById("img0-01").style.transform = "translateY(0%)";
-        } else {
+        } else if (element.id == "0-0") {
+          document.getElementById("img0-01").style.maxWidth = "100%";
+          document.getElementById("img0-01").style.maxHeight = "96vh";
+          document.getElementById("img0-01").style.transform =
+            "translateY(-7%)";
+        } else if (element.id == "0-3") {
           document.getElementById("img0-01").style.maxWidth = "100%";
           document.getElementById("img0-01").style.maxHeight = "96vh";
           document.getElementById("img0-01").style.transform =
@@ -328,35 +357,6 @@
 
         console.log("divs " + n);
         console.log("slideIndex0 " + slideIndex0);
-
-        if (slideIndex0 == 1) {
-          document.getElementById("imageTitle0").innerHTML = "HEADSHOT";
-          document.getElementById("price0").innerHTML = price0_1;
-          document.getElementById(
-            "imageDescription0-1"
-          ).innerHTML = firstDescription0_1;
-          document.getElementById(
-            "imageDescription0-2"
-          ).innerHTML = firstDescription0_2;
-        } else if (slideIndex0 == 2) {
-          document.getElementById("imageTitle0").innerHTML = "HALF BODY";
-          document.getElementById("price0").innerHTML = price0_2;
-          document.getElementById(
-            "imageDescription0-1"
-          ).innerHTML = secondDescription0_1;
-          document.getElementById(
-            "imageDescription0-2"
-          ).innerHTML = secondDescription0_2;
-        } else if (slideIndex0 == 3) {
-          document.getElementById("imageTitle0").innerHTML = "FULL BODY";
-          document.getElementById("price0").innerHTML = price0_3;
-          document.getElementById(
-            "imageDescription0-1"
-          ).innerHTML = thirdDescription0_1;
-          document.getElementById(
-            "imageDescription0-2"
-          ).innerHTML = thirdDescription0_2;
-        }
       }
     </script>
   </body>
