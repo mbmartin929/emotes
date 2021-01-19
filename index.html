@@ -105,7 +105,7 @@
       class="container"
       style="
         position: absolute;
-        top: 90px;
+        top: 50px;
         overflow: hidden;
         transform: translate(0px, 100px);
       "
@@ -179,7 +179,7 @@
                 class="0demo w3-opacity w3-hover-opacity-off contain"
                 src=""
                 style="width: 90%; cursor: pointer"
-                onclick="currentDiv0(3)"
+                onclick="currentDiv0(4)"
               />
             </div>
 
@@ -210,13 +210,28 @@
       <!-- LEFT TEXTS -->
       <div id="second0" style="transform: translate(0%, 0%)">
         <div class="align-left" style="margin-top: 69px">
-          <h1 id="imageTitle0" class="align-left">HEADSHOT</h1>
-          <p id="price0" style="margin-top: 18px">XX - XX USD</p>
+          <p style="margin-top: 18px; font-size: 30px">
+            Per Emote Starting Price:
+          </p>
+          <li style="margin-top: 0px; position: absolute; top: 130px">
+            25 USD
+          </li>
+          <li style="margin-top: 0px; position: absolute; top: 160px">
+            +5 to 20 USD for comlpexity
+          </li>
         </div>
 
-        <div class="align-left" style="margin-top: 42px">
-          <p id="imageDescription0-1">With Background</p>
-          <p id="imageDescription0-2">+XX USD</p>
+        <div class="align-left" style="margin-top: 114px">
+          <p style="font-size: 30px">Expression Change Bundles:</p>
+          <li style="margin-top: 0px; position: absolute; top: 290px">
+            3's = 5 USD Discount
+          </li>
+          <li style="margin-top: 0px; position: absolute; top: 320px">
+            5's = 8 USD Discount
+          </li>
+          <li style="margin-top: 0px; position: absolute; top: 350px">
+            10's = 10 USD Discount
+          </li>
         </div>
       </div>
       <!-- END OF TEXTS -->
@@ -318,9 +333,9 @@
           document.getElementById("img0-01").style.transform = "translateY(0%)";
         } else if (element.id == "0-0") {
           document.getElementById("img0-01").style.maxWidth = "100%";
-          document.getElementById("img0-01").style.maxHeight = "96vh";
+          document.getElementById("img0-01").style.maxHeight = "90vh";
           document.getElementById("img0-01").style.transform =
-            "translateY(-7%)";
+            "translateY(-5%)";
         } else if (element.id == "0-3") {
           document.getElementById("img0-01").style.maxWidth = "100%";
           document.getElementById("img0-01").style.maxHeight = "96vh";
